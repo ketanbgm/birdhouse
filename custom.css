@@ -1,0 +1,72 @@
+.w3-myfont{
+	font-family:Tangerine_Bold;
+}
+@font-face {
+    font-family: "GreatVibes";
+    src: url(fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: "Tangerine_Bold";
+    src: url(fonts/Tangerine_Bold.ttf);
+}
+@font-face {
+    font-family: "Tangerine";
+    src: url(fonts/Tangerine_Regular.ttf);
+}
+.gallery-images{
+	width:100%;
+	float:left;
+	
+
+}
+.container-gallery{
+	padding-top:17px;
+}
+.gallery-card{
+ 	width: 24%;
+    float: left;
+    margin: 6px;
+}
+.gallery-bird-name p{
+	margin-top: 316px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 306px;
+    -webkit-transition:background 0.3s ease-in;
+    transition: background 0.3s ease-in;
+}
+.overlay:hover{
+    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.95);
+    -webkit-transition:background 0.9s ease-out;
+    transition: background 0.9s ease-out;
+
+}
+.gallery-modal{
+    padding-top:33px;
+}
+.modal-images{
+    width:100%;
+    height:344px;
+}
+.modal-card-images{
+    width: 54%;
+    padding: 12px;
+    float: left;
+    margin: 13px;
+}
+.heart-icon:after{
+
+}
+.modal-card-content{
+    width: 40.2%;
+    padding: 9px;
+    float: left;
+    margin: 12px;
+}
+.modal-card-content p{
+    text-align:justify;
+}
+

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todo Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="custom.css">
+		<link rel="stylesheet" href="animate.css">
+		<link rel="stylesheet" href="Hover-master/css/hover.css">
+		<link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left w3-card-4" style="display:none;left:0;" id="leftMenu">
+		  <a href="javascript:void(0)" onclick="closeRightMenu()"
+		  class="w3-closenav w3-large w3-black"><i class="fa fa-close"></i></a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-green w3-hover-border-black w3-hover-green"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-red w3-hover-border-black w3-hover-red"><i class="fa fa-file"></i>&nbsp;&nbsp;Documents</a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-teal w3-hover-border-black w3-hover-teal"><i class="fa fa-users"></i>&nbsp;&nbsp;About Us</a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-orange w3-hover-border-black w3-hover-orange"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact Us</a>
+		</nav>
+		<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left w3-card-4" style="display:none;left:0;" id="RightMenu">
+		  <a href="javascript:void(0)" onclick="closeRightMenu()"
+		  class="w3-closenav w3-large w3-black"><i class="fa fa-close"></i></a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-green w3-hover-border-black w3-hover-green"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-red w3-hover-border-black w3-hover-red"><i class="fa fa-file"></i>&nbsp;&nbsp;Documents</a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-teal w3-hover-border-black w3-hover-teal"><i class="fa fa-users"></i>&nbsp;&nbsp;About Us</a>
+		  <a href="#" class="w3-padding-16 w3-leftbar w3-border-orange w3-hover-border-black w3-hover-orange"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact Us</a>
+		</nav>
+
+
+		<header class="w3-container w3-teal">
+		  <span class="w3-opennav w3-xlarge" onclick="openLeftMenu()">&#9776;</span>
+		  <h1 class="w3-center w3-myfont">Birds House</h1>
+		</header>
+		<div class="w3-container container-gallery">
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id01').style.display='block'">
+				<img src="bird-images/bird.jpg" class="gallery-images">
+				<div class="overlay">
+					<span class="heart-icon"><i class="fa fa-heart"></i></span>
+				</div>
+				<div class="w3-container w3-center gallery-bird-name">
+				    <p>Bird Name</p>
+				</div>
+			</div>
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id02').style.display='block'">
+				<img src="bird-images/sparrow.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+					<p>Bird Name</p>
+				</div>
+			</div>
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id03').style.display='block'">
+				<img src="bird-images/bird.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+					<p>Bird Name</p>
+				</div>
+			</div>
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id04').style.display='block'">
+				<img src="bird-images/sparrow.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+					<p>Bird Name</p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container container-gallery">
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id05').style.display='block'">
+				<img src="bird-images/sparrow.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+				    <p>Bird Name</p>
+				</div>
+			</div>
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id06').style.display='block'">
+				<img src="bird-images/bird.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+					<p>Bird Name</p>
+				</div>
+			</div>
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id07').style.display='block'">
+				<img src="bird-images/sparrow.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+					<p>Bird Name</p>
+				</div>
+			</div>
+			<div class="w3-card-4 gallery-card hvr-rectangle-in" onclick="document.getElementById('id08').style.display='block'">
+				<img src="bird-images/bird.jpg" class="gallery-images">
+				<div class="overlay"></div>
+				<div class="w3-container w3-center gallery-bird-name">
+					<p>Bird Name</p>
+				</div>
+			</div>
+		</div>
+		<div id="id01" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red w3-center"> 
+		      <span onclick="document.getElementById('id01').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+		<div id="id02" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id02').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		     	 <img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		      </div>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		<div id="id03" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id03').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+		<div id="id04" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id04').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+		<div id="id05" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id05').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+		<div id="id06" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id06').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+		<div id="id07" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id07').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+		<div id="id08" class="w3-modal w3-card-12 gallery-modal">
+		  <div class="w3-modal-content animated zoomIn">
+			<header class="w3-container w3-red"> 
+		      <span onclick="document.getElementById('id08').style.display='none'" 
+		      class="w3-closebtn"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+		      <h2>Bird Name Details</h2>
+		    </header>
+		    <div class="w3-container">
+		      <div class="w3-card-2 modal-card-images">
+		      	<img src="bird-images/merle.jpg" class="modal-images">
+		      </div>
+		      <div class="w3-card-2 modal-card-content">
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		      	</p>
+		      	<p>
+		      		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		      	</p>
+		    </div>
+		    <!-- <footer class="w3-container w3-red">
+		      <p>Modal Footer</p>
+		    </footer> -->
+		  </div>
+		</div>
+		</div>
+	</body>
+</html>
